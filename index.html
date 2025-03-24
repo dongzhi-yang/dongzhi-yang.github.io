@@ -10,14 +10,14 @@
     </style>
    <script src="https://flutecenterofnewyork--ascentfull.sandbox.my.site.com/lightning/lightning.out.js"></script>
    <script>
-    $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
+    $Lightning.use("c:MyFlowLightningOutApp",
         function() {              	// Callback once framework and app load
             $Lightning.createComponent(
-                "lightning:flow",	// top-level component of your app
-                { },	// attributes to set on the component when created
-                "lexcontainer",	// the DOM location to insert the component
-                function(component) {        	// API name of the Flow
-                    component.startFlow("Screen_Flow_Inbound_New_Guest_Appointment");
+                "c:FlowWrapperComponent",
+                {},
+                "lexcontainer",
+                function(component) {
+                    console.log("FlowWrapperComponent created");
                 }
             );
         },	'https://flutecenterofnewyork--ascentfull.sandbox.my.site.com'  // Site endpoint
