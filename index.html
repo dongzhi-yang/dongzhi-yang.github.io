@@ -1,34 +1,77 @@
-<html>
-    <head>
-        <style>
-            .slds-visual-picker_vertical .slds-visual-picker__figure {
-                height: inherit !important;
-            }
-   .runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
-                display: inline-flex !important;
-            }
-    </style>
-   <script src="https://flutecenterofnewyork.my.site.com/lightning/lightning.out.js"></script>
-   <script>
-    $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
-        function() {              	// Callback once framework and app load
-            $Lightning.createComponent(
-                "lightning:flow",	// top-level component of your app
-                { },	// attributes to set on the component when created
-                "lexcontainer",	// the DOM location to insert the component
-                function(component) {        	// API name of the Flow
-                    component.startFlow("Screen_Flow_Inbound_New_Guest_Appointment");
-                }
-            );
-        },	'https://flutecenterofnewyork.my.site.com/'  // Site endpoint
-    );
-</script>    
-</head>
-    <body>
+<!DOCTYPE html>
 
-       
-       <div id="lexcontainer">
-        <p>Invoke the Lightning Component specified in the Script.</p>
-        </div>
-    </body>
+<html>
+
+<head>
+
+<style>
+
+.slds-visual-picker_vertical .slds-visual-picker__figure {
+
+height: inherit !important;
+
+}
+
+
+
+.runtime_appointmentbookingFlowLocation .slds-visual-picker_vertical {
+
+display: inline-flex !important;
+
+}
+
+</style>
+
+<script src="https://trainingcom19-dev-ed.my.site.com/lout/lightning/lightning.out.js"></script>
+
+<script>
+
+$Lightning.use("runtime_appointmentbooking:lightningOutGuest",
+
+function() { // Callback once framework and app load
+
+$Lightning.createComponent(
+
+"lightning:flow", // top-level component of your app
+
+{ }, // attributes to set on the component when created
+
+"lexcontainer", // the DOM location to insert the component
+
+function(component) { // API name of the Flow
+
+component.startFlow("Inbound_New_Guest_Appointment");
+
+}
+
+);
+
+}, 'https://trainingcom19-dev-ed.my.site.com/lout/' // Site endpoint
+
+);
+
+</script>
+
+
+
+<title>Page Title</title>
+
+</head>
+
+<body>
+
+
+
+<h1>My Firsts Heading</h1>
+
+<p>My first paragraph.</p>
+
+<div id="lexcontainer">
+
+<p>Invoke the Lightning Component specified in the Script.</p>
+
+</div>
+
+</body>
+
 </html>
